@@ -1,0 +1,20 @@
+canvas {
+  width: 100% !important;
+  max-width: 800px;
+  height: 400px !important;
+  background-color: #221f14; /* fallback background */
+}
+
+.filters {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+select {
+  padding: 0.3rem;
+  border-radius: 4px;
+  background-color: #3d3c2a;
+  color: #ffcc00; /* dropdown font color */
+  border: 1px solid #444;
+}

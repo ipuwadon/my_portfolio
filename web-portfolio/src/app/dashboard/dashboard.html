@@ -1,0 +1,35 @@
+<div class="dashboard-container">
+    <h1>Portfolio Management Dashboard</h1>
+
+    <h2>{{ userEmail }}</h2>
+    <section class="card skill-card">
+        <h2>Skill Set</h2>
+        <div class="skill-container">
+            <ul class="skill-list">
+                <li *ngFor="let skill of skills" class="skill-item">
+                    <span class="skill-name">{{ skill.skill_desc }}</span>
+                    <span class="skill-level">{{ decodeLevel(skill.level) }}</span>
+                </li>
+                <li *ngFor="let skill of skills" class="skill-item">
+                    <span class="skill-name">{{ skill.skill_desc }}</span>
+                    <span class="skill-level">{{ decodeLevel(skill.level) }}</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="card project-card">
+        <h2>Projects</h2>
+            <ul>
+                <h1>Gold Price Analysis</h1>
+            </ul>
+            <ul>
+                <span><a href="http://localhost:8080/dags/load_gold_price_dag/runs" target="_blank">Retrieve historical gold prices using Airflow orchestration</a></span>
+            </ul>
+            <div class="chart-section">
+                <app-gold-chart></app-gold-chart>
+            </div>
+
+    </section>
+
+</div>

@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+body, html {
+  background: url('assets/bk.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgb(0, 31, 77);
+  background-blend-mode: multiply;
+  font-family: 'Poppins', sans-serif;
+}

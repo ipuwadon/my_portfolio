@@ -1,0 +1,140 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    color: #fff;
+    margin-top: 5%;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.card {
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.1), rgba(42, 82, 152, 0.1));
+    border-radius: 8px;
+    padding: 1.5rem;
+    padding-top: 1rem;
+    margin: 1rem;
+    width: 80%;
+    max-width: 800px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease; 
+}
+
+.card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    transition: translateY(-4px);
+}
+
+.skill-card {
+    border-left: 6px solid #f0c466;
+}
+
+.skill-card h2 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.skill-card h2::after {
+  content: "";
+  display: block;
+  width: 540px;
+  height: 3px;
+  background: #f0c466;
+  margin: 0.5rem auto 0;
+}
+
+.skill-container {
+    height: calc(2em * 8);
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    animation: scroll-up 10s linear infinite;
+    animation-play-state: running;
+}
+
+.skill-container:hover .skill-list {
+    animation-play-state: paused;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2em;
+    padding: 0 8px;
+    /*border-bottom: 1px solid #ccc;*/
+}
+
+/* Animation keyframes */
+@keyframes scroll-up {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+
+.skill-name {
+    font-weight: 500;
+}
+
+.skill-level {
+    color: #ffcc00;
+    font-style: italic;
+}
+
+
+.project-card {
+    border-left: 6px solid #e78d06;
+}
+
+.project-card h2 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.project-card h2::after {
+  content: "";
+  display: block;
+  width: 540px;
+  height: 3px;
+  background: #e78d06;
+  margin: 0.5rem auto 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+a {
+    color: #f3b04a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    /*border-bottom: 2px solid #f3b04a;*/
+}
+
+a:hover {
+    color: #f1e7bc;
+    border-bottom: 2px solid #f1e7bc;
+}

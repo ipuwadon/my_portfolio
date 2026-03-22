@@ -1,0 +1,26 @@
+<div class="filters">
+  <label>
+    Year:
+    <select [(ngModel)]="selectedYear" (change)="updateChart()">
+      <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+    </select>
+  </label>
+
+  <label>
+    Month:
+    <select [(ngModel)]="selectedMonth" (change)="updateChart()">
+      <option *ngFor="let month of months" [value]="month">
+        {{ month === 'ALL' ? 'All Months' : month }}
+      </option>
+    </select>
+  </label>
+
+  <button (click)="resetZoom()">Reset Zoom</button>
+
+</div>
+
+<h3>Historical Gold Price Chart</h3>
+<canvas id="goldChart"></canvas>
+
+<h3>Predictive Gold Price Chart</h3>
+<canvas id="goldPredictiveChart"></canvas>

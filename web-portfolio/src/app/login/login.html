@@ -1,0 +1,24 @@
+<div class="login-container">
+    <div class="login-box">
+        <h2><img src="/icon.png"/> Web Portfolio</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <label>Email:</label>
+            <input type="email" formControlName="email" placeholder="email" />
+
+            <label>Passwod:</label>
+            <input type="password" formControlName="password" placeholder="password" />
+
+            <button type="submit" [disabled]="loginForm.invalid">Login</button>
+        </form>
+
+        <a href="https://github.com/ipuwadon" target="_blank">
+            <img src="/github.png" alt="GitHub" class="login-icon" />
+        </a>
+
+        <!--<a href="https://github.com/ipuwadon" target="_blank">
+            <img src="/cv_icon.png" alt="GitHub" class="login-icon" />
+        </a>-->
+
+        <p class="note">Register feature will be next time</p>
+    </div>
+</div>
