@@ -1,0 +1,25 @@
+# Virtual environments
+venv/
+airflow-venv/
+.venv/
+
+# Logs
+logs/
+web-api/logs/
+*.log
+
+# Python cache
+*.pyc
+__pycache__/
+
+# Airflow local files
+airflow.db
+airflow.cfg
+
+# VS Code settings
+.vscode/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
